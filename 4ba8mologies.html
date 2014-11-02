@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Φροντιστήριο Η Μέθοδος</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<body background="1.jpg">
+<img src="nlogo.png">
+<div id='cssmenu'>
+<ul>
+   <li><a href='1index.html'><span>Aρχική</span></a></li>
+   <li><a href='2to frontistirio.html'><span>Το Φροντιστήριο</span></a></li>
+   <li><a href='3programa spoudon.html'><span>Προγραμα Σπουδών</span></a></li>
+   <li class='active' ><a href='4ba8mologies.html'><span>Βαθμολογίες</span></a></li>
+   <li class='last'><a href='5pleirofories epikinonias.html'><span>Εποικινωνία</span></a></li>
+</ul>
+</div>
+<HR>
+<!--Ευθυμής Κεχαγιογλου-->
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "123456") {
+alert('You Got it Right!');
+window.open('1B.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<!----Ευθυμής Κεχαγιογλου---->
+<FORM>
+<input type="button" value="Ευθυμής Κεχαγιογλου" onClick="passWord()">
+</FORM>
+<!--1-->
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Εισαγετε τον κωδικω προσβασης',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "111111") {
+alert('Κωδικος Σωστος');
+window.open('2B.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('κωδικος λαθος ξαναγραψτε τον ','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<!----1---->
+<FORM>
+<input type="button" value="1" onClick="passWord()">
+</FORM>
+<HR>
+<font size="7"<p>A-Ζ</p></font>
+</body>
+</html>
